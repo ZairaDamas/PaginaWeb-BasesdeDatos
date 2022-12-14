@@ -1,0 +1,77 @@
+
+.slider{
+  position: relative;
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+  display: inline-block;
+}
+.title{
+	Font-family: Helvetica;
+	position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.content{
+	position: absolute;
+    top: 450px;
+	left: 500px;
+	transform: translate(-50%, -50%);
+    
+}
+
+.content .par{
+    padding-left: 30px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 80px;
+    color: white;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+.content span{
+    color: #ff7200;
+    font-size: 120px
+}
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+	position: relative;
+    width: 100%;
+    height: 100%;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+.slider, .slider ul, .slider img{
+    height: 100vh;
+}
+}
